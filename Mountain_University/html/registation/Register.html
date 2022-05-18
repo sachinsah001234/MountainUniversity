@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+   
+h2{
+ font-family: Sans-serif; 
+ font-size: 24px;     
+ font-style: normal; 
+ font-weight: bold; 
+ color:blue;
+ text-align: center; 
+ text-decoration: underline
+}
+table{
+ font-family: verdana; 
+ color:white; 
+ font-size: 16px; 
+ font-style: normal;
+ font-weight: bold;
+ background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);  
+ border: 4px solid #000000;
+  
+}
+table.inner{
+ border: 10px
+}
+input[type=text], input[type=email], input[type=number]{
+ width: 50%;
+ padding: 6px 12px;
+ margin: 5px 0;
+ box-sizing: border-box;
+}
+input[type=submit], input[type=reset]{
+ width: 15%;
+ padding: 8px 12px;
+ margin: 5px 0;
+ box-sizing: border-box;
+}
+</style>
+    </head>
+    <body>
+        <h2>Registration Form</h2>
+        <form>
+            <table align="center" cellpadding="10">
+                <tr>
+                    <td>First Name</td>
+                    <td>
+                        <input type="text" name="FirstName" placeholder="enter first name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>
+                        <input type="text" name="LastName" placeholder="enter last name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email ID</td>
+                    <td><input type="email" name="EmailID"
+                            placeholder="abc@gmail.com" /></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td>
+                        <input type="text" name="MobileNumber"
+                            placeholder="enter number" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="Gender" value="Male" />
+                        Male
+                        <input type="radio" name="Gender" value="Female" />
+                        Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth(DOB)</td>
+                    <td>
+                        <select name="BirthDay" id="Birthday_Day">
+                            <option value="-1">Day:</option>
+                            <option value="1">1:</option>
+                        </select>
+                        <select name="BirthdayMonth" id="Birthday_Month">
+                            <option value="-1">Month:</option>
+                            <option value="1">Jan:</option>
+                        </select>
+                        <select name="BirthdayYear" id="Birthday_Year">
+                            <option value="-1">Year:</option>
+                            <option value="1">1999:</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address<br /><br /><br /></td>
+                    <td><textarea name="Address" rows="10" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td><input type="text" name="City" placeholder="enter city name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pin Code</td>
+                    <td><input type="Number" name="PinCode" placeholder="enter pincode" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td><input type="text" name="State" placeholder="enter state name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td><input type="text" name="Country" placeholder="enter country name" /></td>
+                </tr>
+                <tr>
+                    <td>Qualification <br /><br /><br /></td>
+                    <td>
+                        <br/>
+                            <input type="checkbox" name="12th pass"
+                                value="12th pass" />
+                            12th pass<br/>
+                                <input type="checkbox" name="Diploma"
+                                    value="Diploma" />
+                                Diploma<br/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Courses<br />Applied For</td>
+                                <td>
+                                    <input type="radio" name="Course"
+                                        value="CSE">
+                                    Computer Science Engineering<br>
+                                    <input type="radio" name="Course"
+                                        value="IT">
+                                    Information Technological<br>
+                                    <input type="radio" name="Course"
+                                        value="ECE">
+                                    Electrical and Communication Engineering<br>
+                                    <input type="radio" name="Course"
+                                        value="M.E">
+                                    Mechanical Engineering<br>
+                                    <input type="radio" name="Course"
+                                        value="C.E">
+                                    Civil Engineering<br>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <input type="submit" value="Submit">
+                                    <input type="reset" value="Reset">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </body>
+            </html>
